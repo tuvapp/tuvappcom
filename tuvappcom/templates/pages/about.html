@@ -1,1 +1,203 @@
 {% extends "base.html" %}
+{% block modal %}
+<body class="about-us">
+  <div id="navbar">
+
+    <nav class="navbar navbar-default" role="navigation">
+
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+            <span class="sr-only">Toggle navigation</span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+          </button>
+
+          <a class="navbar-brand" href="{% url 'home' %}"><img src="https://s3-eu-west-1.amazonaws.com/progressivesafety/Logo.png" alt="PROGRESSIVE SAFETY"></a>
+
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav navbar-right">
+
+            <li class="active"><a href="{% url 'product' %}">Produkter</a></li>
+
+            <button class="btn btn-default"><a href="{% url 'contact' %}">Kontakt</a></button>
+
+
+          <!--  <li class="dropdown">
+
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+
+              <ul class="dropdown-menu">
+
+                <li><a href="#">Action</a></li>
+
+                <li><a href="#">Another action</a></li>
+
+                <li><a href="#">Something else here</a></li>
+
+                <li class="divider"></li>
+
+                <li><a href="#">Separated link</a></li>
+
+                <li class="divider"></li>
+
+                <li><a href="#">One more separated link</a></li>
+
+              </ul>
+
+            </li> -->
+
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+
+      </div><!-- /.container-fluid -->
+
+    </nav>
+
+  </div><!--  end navbar -->
+
+<div class="wrapper">
+    <div class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">Team</h2>
+            <div class="team-presentation">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card card-user">
+                            <div class="image">
+                                <img src="https://s3-eu-west-1.amazonaws.com/progressivesafety/person-4.jpg">
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                    <a href="#">
+                                    <img class="avatar" src="https://s3-eu-west-1.amazonaws.com/progressivesafety/person-4.jpg" alt="..."/>
+                                    <h4 class="title">Amhed <br />
+                                        <small>Grundare och försäljning</small>
+                                    </h4>
+                                    </a>
+                                </div>
+                                <p class="description text-center">
+                                    <i class="fa fa-map-marker fa-fw text-muted"></i> Jönköping, Sverige <br/>
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button href="#" class="btn btn-social btn-facebook btn-simple"><i class="fa fa-facebook-square"></i></button>
+
+                            </div>
+                        </div> <!-- end card-->
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-user">
+                            <div class="image">
+                                <img src="https://s3-eu-west-1.amazonaws.com/progressivesafety/person-4.jpg">
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                    <a href="#">
+                                        <img class="avatar" src="https://s3-eu-west-1.amazonaws.com/progressivesafety/person-4.jpg" alt="..."/>
+                                        <h4 class="title">Farok <br />
+                                            <small>Grundare och försäljning</small>
+                                        </h4>
+                                    </a>
+                                </div>
+                                <p class="description text-center">
+                                    <i class="fa fa-map-marker fa-fw text-muted"></i> Jönköping, Sverige <br/>
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button href="#" class="btn btn-social btn-facebook btn-simple"><i class="fa fa-facebook-square"></i></button>
+                            </div>
+                        </div> <!-- end card -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end section meet our team -->
+
+    <div class="section">
+           <div class="container">
+               <h2 class="section-title">Så startade Progressive Safety</h2>
+               <div class="row">
+                   <div class="col-md-6">
+                       <p>
+                           När Ahmed fick en spännande teknisk skoluppgift så bad han sin vän Faruk, som läste energiteknik på Högskolan i Borås, att spåna idéer ihop med honom. Ahmed hade då en tråkig skidolycka med brutna handleder och ryggrad bakom sig och efter lång rehab fortfarande svårt att lyfta saker. Så noterade de brandsläckaren längre bort och började diskutera Ahmeds möjligheter att göra en räddningsaktion om det började brinna – och då kom idén.</p>
+
+                   </div>
+                     <div class="col-md-6">
+                       <p>Progressive Safety blev med sin idé EasyExtingush brandsläckarvagn valt till SKAPA Framtidens Innovatör 2013 i Jönköpings län.
+Motivering: I samband med brandtillbud är det oerhört viktigt att man har tillräcklig kapacitet i utplacerade brandsläckare. Många gånger måste man kompromissa med vikten på brandsläckaren i förhållande till de som ska använda den. Denna uppfinning löser problemet och kommer att kunna bidra med högre brandbekämpningskapacitet under de viktiga initiala släckningsförsöken..</p>
+                   </div>
+               </div>
+           </div>
+    </div><!-- section -->
+
+
+</div> <!-- wrapper -->
+<footer class="footer footer-big">
+    <!-- .footer-black is another class for the footer, for the transparent version, we recommend you to change the url of the image with your favourite image.          -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <h5 class="title">AFFÄRSIDÉ</h5>
+              <p>
+                          Progressive Safety är ett svenskt bolag som utvecklar livsavgörande hjälpmedel inom området brandsäkerhet.
+                      </p>
+
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <h5 class="title">MER</h5>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="{% url 'home' %}">
+                                        Hem
+                                    </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'about' %}">
+                                       Om Oss
+                                    </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'press' %}">
+                                        Våra Nyheter
+                                    </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-3">
+                <h5 class="title"> KONTAKTA OSS</h5>
+                <nav>
+                    <ul>
+                        <li>
+                          <button class="btn btn-default"><a href="{% url 'contact' %}">Kontakta oss</a></button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <hr />
+        <div class="copyright">
+            &copy; 2016 Progressivesafety
+        </div>
+    </div>
+</footer>
+</body>
+{% endblock modal %}

@@ -1,0 +1,196 @@
+{% extends "base.html" %} {% load staticfiles i18n %} {% block modal %}
+
+<body>
+
+    <body class="contact-us">
+      <div id="navbar">
+
+        <nav class="navbar navbar-default" role="navigation">
+
+          <div class="container-fluid">
+
+            <div class="navbar-header">
+
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+                <span class="sr-only">Toggle navigation</span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+              </button>
+
+              <a class="navbar-brand" href="{% url 'home' %}"><img src="https://s3-eu-west-1.amazonaws.com/progressivesafety/Logo.png" alt="PROGRESSIVE SAFETY"></a>
+
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+              <ul class="nav navbar-nav navbar-right">
+
+                <li class="active"><a href="{% url 'product' %}">Produkter</a></li>
+
+                <button class="btn btn-default"><a href="{% url 'contact' %}">Kontakt</a></button>
+
+
+              <!--  <li class="dropdown">
+
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+
+                  <ul class="dropdown-menu">
+
+                    <li><a href="#">Action</a></li>
+
+                    <li><a href="#">Another action</a></li>
+
+                    <li><a href="#">Something else here</a></li>
+
+                    <li class="divider"></li>
+
+                    <li><a href="#">Separated link</a></li>
+
+                    <li class="divider"></li>
+
+                    <li><a href="#">One more separated link</a></li>
+
+                  </ul>
+
+                </li> -->
+
+              </ul>
+
+            </div><!-- /.navbar-collapse -->
+
+          </div><!-- /.container-fluid -->
+
+        </nav>
+
+      </div><!--  end navbar -->
+        <div class="wrapper">
+            <div class="parallax">
+                <div class="company-description">
+                    <h4>Progressive Safety</h4>
+                    <p>Jönköping, Sverige</p>
+                </div>
+                <div id="contactUsMap" class="big-map"></div>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <h2 class="section-title">Hur kan vi hjälpa dig?</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>
+                                Vänligen kontakta oss när och hur du vill via kontaktformen så återkommer vi så snart vi bara kan.
+                                <br>
+                                <br>
+                            </p>
+                            <form role="form" id="contact-form" method="post">
+                                <div class="form-group">
+                                    <label for="name">Ditt Namn</label>
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="First Name and Last Name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Your personal email address" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Telefon</label>
+                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone number" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Ditt Meddelande</label>
+                                    <textarea name="message" class="form-control" id="message" rows="6"></textarea>
+                                </div>
+                                <div class="submit">
+                                    <input type="submit" class="btn btn-info btn-fill" value="Skicka Meddelande" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4 col-md-offset-2">
+                            <div class="contact-info">
+                                <h5><i class="fa fa-map-marker text-muted"></i> Address</h5>
+                                <p class="text-muted"> Gjuterigatan, nr. 9,
+                                    <br> 553 18 Jönköping,
+                                    <br> Sverige
+                                </p>
+                                <br>
+                                <h5><i class="fa fa-phone text-muted"></i>Support</h5>
+                                <p class="text-muted">
+                                    +46 (0) 767 - 05 53 70
+                                    <br> Mon - Fri, 8:00-18:00
+                                </p>
+                                <br>
+                                <!--    <h5><i class="fa fa-building text-muted"></i> Företags info</h5>
+                                <p class="text-muted"> Progressive Safety.
+                                    <br> VAT &middot; EN2341241
+                                    <br> IBAN &middot; EN8732ENGB2300099123
+                                    <br> Bank &middot; Great Britain Bank
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section -->
+            <div class="space-50"></div>
+
+        </div>
+        <!-- wrapper -->
+        <footer class="footer footer-big">
+            <!-- .footer-black is another class for the footer, for the transparent version, we recommend you to change the url of the image with your favourite image.          -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="title">AFFÄRSIDÉ</h5>
+                        <p>
+                            Progressive Safety är ett svenskt bolag som utvecklar livsavgörande hjälpmedel inom området brandsäkerhet.
+                        </p>
+
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <h5 class="title">MER</h5>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'home' %}">
+                                                Hem
+                                            </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'about' %}">
+                                               Om Oss
+                                            </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'press' %}">
+                                                Våra Nyheter
+                                            </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="title"> KONTAKTA OSS</h5>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <button class="btn btn-default"><a href="{% url 'contact' %}">Kontakta oss</a></button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <hr />
+                <div class="copyright">
+                    &copy; 2016 Progressivesafety
+                </div>
+            </div>
+        </footer>
+    </body>
+    {% endblock modal %}
